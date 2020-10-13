@@ -15,7 +15,7 @@ import com.tselree.status.dao.StatusDAOimpl;
 
 @Configuration
 @PropertySource({
-        "file:src/main/resources/application.properties" 
+        "file:src/main/resources/status_application.properties" 
 })
 public class AppConfig {
 	@Autowired
