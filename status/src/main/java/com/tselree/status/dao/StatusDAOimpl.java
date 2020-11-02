@@ -14,7 +14,7 @@ public class StatusDAOimpl implements StatusDAO{
 
 	@Override
 	public void postStatus(Integer totalFile, Date fileTransferDate, String fileTransferStatus) {
-		String sql = "INSERT INTO public.extc_file_status(TOTAL_FILE, FILE_TRANSFER_DATE, FILE_TRANSFER_STATUS) VALUES("+totalFile+",'"+fileTransferDate+"','"+fileTransferStatus+"')";
+		String sql = "INSERT INTO epcdevteam.extc_file_status(TOTAL_FILE, FILE_TRANSFER_DATE, FILE_TRANSFER_STATUS) VALUES("+totalFile+",'"+fileTransferDate+"','"+fileTransferStatus+"')";
 		jdbcTemplate.update(sql);
 	}
 
